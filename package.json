@@ -4,7 +4,10 @@
   "description": "GymPass style app",
   "main": "index.js",
   "scripts": {
-    "start:dev": "tsx watch src/server.ts",
+    "start:dev": "npm run services:up && tsx watch src/server.ts",
+    "services:up": "docker compose up -d",
+    "services:stop": "docker compose stop",
+    "services:down": "docker compose down -v",
     "start": "node build/server.js",
     "build": "tsup src --out-dir build",
     "test": "vitest run",
