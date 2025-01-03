@@ -12,19 +12,15 @@ export class InMemoryUsersRepository implements UsersRepository {
       password_hash: data.password_hash,
       created_at: new Date(),
     }
-
     this.items.push(user)
-
     return user
   }
 
   async findByEmail(email: string) {
     const user = this.items.find((user) => user.email === email)
-
     if (!user) {
       return null
     }
-
     return user
   }
 }
