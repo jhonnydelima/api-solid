@@ -11,7 +11,7 @@
 - [ ] Deve ser possível o usuário obter o seu histórico de check-ins;
 - [ ] Deve ser possível o usuário buscar academias próximas;
 - [ ] Deve ser possível o usuário buscar academias pelo nome;
-- [ ] Deve ser possível cadastrar uma academia;
+- [X] Deve ser possível cadastrar uma academia;
 
 ### RNs (Regras de negócio)
 
