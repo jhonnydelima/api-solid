@@ -30,7 +30,6 @@ export class CreateGymUseCase {
       latitude,
       longitude,
     })
-
     return {
       gym,
     }
