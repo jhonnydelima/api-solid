@@ -16,7 +16,7 @@ export async function fetchNearbyGyms(
     page: z.coerce.number().min(1).default(1),
   })
   const { latitude, longitude, page } = fetchNearbyGymsQuerySchema.parse(
-    request.body,
+    request.query,
   )
   const fetchNearbyGymsUseCase = makeFetchNearbyGymsUseCase()
   const { gyms } = await fetchNearbyGymsUseCase.execute({
